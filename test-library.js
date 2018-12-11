@@ -20,19 +20,20 @@
 })(this);
 
 // Not using yet
-(function(exports){
-  var test = {
-     name: function(name, callback) {
-      console.log(name);
-      console(callback);
-    }
-  };
-})
+// (function(exports){
+//   var test = {
+//      name: function(name, callback) {
+//       console.log(name);
+//       console.log(callback);
+//     }
+//   };
+//   exports.test = test;
+// })(this);
 
-// function test(name, fn) {
-//   console.log(name);
-//   console.log(fn);
-// }
+function test(name, fn) {
+  console.log(name);
+  console.log(fn);
+}
 //
 // function anticipate(input){
 //   this.output = input;
