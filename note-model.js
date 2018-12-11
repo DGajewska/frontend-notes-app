@@ -1,12 +1,10 @@
-describe("NotesApp", function() {
-  var notesApp;
+function Note (){
+  this.text;
+}
+Note.prototype.createNote = function (note_text) {
+  this.text = note_text;
+};
 
-  beforeEach(function() {
-    notesApp = new NotesApp();
-  })
-
-  it("should store a note", function() {
-    notesApp.newPost("My favourite language is JavaScript")
-    expect(notesApp.posts).toEqual(["My favourite language is JavaScript"]);
-  })
-})
+Note.prototype.viewNote = function () {
+  return this.text;
+}
