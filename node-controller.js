@@ -1,4 +1,3 @@
-function changeGreeting(new_greeting) {
-  var greeting = document.getElementById('app');
-  greeting.innerText = new_greeting;
-}
+document.addEventListener("DOMContentLoaded", changeGreeting(new_greeting) {
+    document.getElementById('app').innerText = new_greeting;
+  });
