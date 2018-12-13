@@ -28,3 +28,11 @@ noteListView = new NoteListView(noteList);
 test("Handle a noteList with one note",
   anticipate.toBeTheSame(noteListView.createHTMLString(),
   "<ul><li><div>Hello World</div></li></ul>"));
+
+
+noteList = new NoteList();
+noteList.addNote("Hello Cruel Cruel World");
+noteListView = new NoteListView(noteList);
+test("Returns the first 20 characters of a note",
+  anticipate.toBeTheSame(noteListView.createHTMLString(),
+  "<ul><li><div>Hello Cruel Cruel Wo</div></li></ul>"));

@@ -1,6 +1,3 @@
-// document.addEventListener("DOMContentLoaded", changeGreeting(new_greeting) {
-//     document.getElementById('app').innerText = new_greeting;
-//   });
 
 (function(exports){
   function Controller(noteList){
@@ -18,6 +15,6 @@
   exports.Controller = Controller;
 })(this);
 
-var noteList = new NoteList();
-var controller = new Controller(noteList);
-controller.getHTML();
+// var noteList = new NoteList();
+// var controller = new Controller(noteList);
+// controller.getHTML();

@@ -6,7 +6,7 @@
   function getNotesArray(array) {
     var noteText = [];
     for(var i=0; i<array.notes.length; i++){
-      noteText.push(array.notes[i].text);
+      noteText.push(array.notes[i].text.slice(0, 20));
     }
     return noteText;
   };
