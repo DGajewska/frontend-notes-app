@@ -14,28 +14,18 @@
           return "Test passes";
         }
       },
+      isEmptyArray: function(array) {
+        if(!(Array.isArray(array) && array.length === 0)){
+          throw new Error(array + " is not an empty array");
+        } else {
+          return "Test passes";
+        }
+      },
   };
 
   exports.anticipate = anticipate;
 })(this);
 
-// Not using yet
-// (function(exports){
-//   var test = {
-//      name: function(name, callback) {
-//       console.log(name);
-//       console.log(callback);
-//     }
-//   };
-//   exports.test = test;
-// })(this);
-
 function test(name, fn) {
-  console.log(name);
-  console.log(fn);
+  console.log(name + ": " + fn);
 }
-//
-// function anticipate(input){
-//   this.output = input;
-//   return this;
-// }

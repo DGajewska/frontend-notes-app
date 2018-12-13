@@ -1,16 +1,5 @@
-// var note = new Note();
-//
-// console.log("Note text matches text attribute")
-// note.createNote("this is my note");
-// console.log(anticipate.toBeTheSame("this is my note", note.text));
-
 var noteList;
 var noteListView;
-
-noteList = new NoteList();
-noteList.addNote("Hello");
-test("Note to be included in NoteList",
-      anticipate.toBeTheSame(noteList.notes[0], "Hello"));
 
 noteList = new NoteList();
 noteListView = new NoteListView(noteList);
@@ -36,6 +25,6 @@ test("Handle a noteList with no notes",
 noteList = new NoteList();
 noteList.addNote("Hello World");
 noteListView = new NoteListView(noteList);
-test("Handle a noteList with no notes",
+test("Handle a noteList with one note",
   anticipate.toBeTheSame(noteListView.createHTMLString(),
   "<ul><li><div>Hello World</div></li></ul>"));
