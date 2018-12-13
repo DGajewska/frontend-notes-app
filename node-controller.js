@@ -33,6 +33,12 @@
     document.getElementById("app").innerHTML = noteView.createHTMLString();
   };
 
+    document.addEventListener("click", Controller.prototype.createNote() {
+      document.getElementById("text")
+      console.log("Hello");
+      })
+
+
   exports.Controller = Controller;
 })(this);
 
